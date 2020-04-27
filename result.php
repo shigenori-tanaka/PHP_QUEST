@@ -31,10 +31,6 @@
             echo "{$_GET["enemy"]}に{$damege}のダメージ！";
             }
         }
-
-        
     ?>
-    
-  
   </body>
 </html>

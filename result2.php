@@ -5,5 +5,4 @@
         echo "{$player} ";
     }
     echo "達は逃げた！"
-
 ?>

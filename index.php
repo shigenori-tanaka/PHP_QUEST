@@ -1,4 +1,4 @@
-<?php require_once("data.php") ?>
+
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -9,17 +9,11 @@
     </head>
   <body>
     <?php 
-      
       foreach($enemies as $enemy){
         echo "{$enemy} <br>";
       }
       echo "が現れた！";
-
-      
-      
     ?>
-
-
     <form action="result.php" method="get">
       <label for="player">誰で闘う？</label>
       <select name="player">
@@ -48,7 +42,5 @@
     <form action="result2.php" method="get">
       <input type="submit" value="にげる">
     </form>
-
-  
   </body>
 </html>
