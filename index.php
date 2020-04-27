@@ -1,3 +1,5 @@
+<?php require_once("data.php") ?>
+
 <!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -7,14 +9,14 @@
     </head>
   <body>
     <?php 
-      $enemies = ["スライム", "ゴブリン"] ;
+      
       foreach($enemies as $enemy){
         echo "{$enemy} <br>";
       }
       echo "が現れた！";
 
-      $players = ["たろう", "次郎", "JOHN"];
-      $attacks = ["武器で攻撃", "魔法で攻撃"];
+      
+      
     ?>
 
 
