@@ -9,7 +9,7 @@
     <?php 
       $enemies = ["スライム", "ゴブリン"] ;
       foreach($enemies as $enemy){
-        echo "{$enemy} ";
+        echo "{$enemy} <br>";
       }
       echo "が現れた！";
 
@@ -27,21 +27,24 @@
       </select>
       <?php echo "<br>" ?>
 
-      <label for="enemy">誰を攻撃する？</label>
+      <label for="enemy">どの敵を攻撃する？</label>
       <select name="enemy">
         <?php foreach($enemies as $enemy): ?>
           <option value="<?php echo $enemy?>"><?php echo $enemy?></option>
         <?php endforeach ?>
       </select>
       <?php echo "<br>";?>
-      
+
       <label for="attack">攻撃方法</label>
       <select name="attack">
         <?php foreach($attacks as $attack): ?>
           <option value="<?php echo $attack ?>"><?php echo $attack ?></option>
         <?php endforeach ?>
       </select>
-      <input type="submit" value="実行">
+      <p><input type="submit" value="戦闘開始"></p>
+    </form>
+    <form action="result2.php" method="get">
+      <input type="submit" value="にげる">
     </form>
 
   
