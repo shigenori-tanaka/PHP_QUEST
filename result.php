@@ -9,7 +9,7 @@
     <?php 
         if($_GET["attack"] == "魔法で攻撃") {
             $damege = rand(15,20);
-            echo "{$_GET["attack"]}!!";
+            echo "{$_GET["player"]}が{$_GET["attack"]}!!";
             echo "<br>";
             echo "{$_GET["enemy"]}に{$damege}のダメージ！";
         }
@@ -17,9 +17,9 @@
         if($_GET["attack"] == "武器で攻撃"){
             $damege = rand(0,6);
             if($damege == 0 or $damege == 1){
-                echo "ミス！ダメージを与えられない！";
+                echo "ミス！{$_GET["player"]}はダメージを与えられない！";
             }else{
-            echo "{$_GET["attack"]}!!";
+            echo "{$_GET["player"]}が{$_GET["attack"]}!!";
             echo "<br>";
             echo "{$_GET["enemy"]}に{$damege}のダメージ！";
             }

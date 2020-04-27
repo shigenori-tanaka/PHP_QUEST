@@ -13,12 +13,20 @@
       }
       echo "が現れた！";
 
+      $players = ["たろう", "次郎", "JOHN"];
       $attacks = ["武器で攻撃", "魔法で攻撃"];
-
     ?>
 
 
     <form action="result.php" method="get">
+      <label for="player">誰で闘う？</label>
+      <select name="player">
+        <?php foreach($players as $player): ?>
+          <option value="<?php echo $player ?>"><?php echo $player ?></option>
+        <?php endforeach ?>
+      </select>
+      <?php echo "<br>" ?>
+
       <label for="enemy">誰を攻撃する？</label>
       <select name="enemy">
         <?php foreach($enemies as $enemy): ?>
@@ -33,12 +41,9 @@
           <option value="<?php echo $attack ?>"><?php echo $attack ?></option>
         <?php endforeach ?>
       </select>
-
-
-
-
       <input type="submit" value="実行">
     </form>
+
   
   </body>
 </html>
