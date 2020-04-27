@@ -1,4 +1,9 @@
+<?php require_once("data.php") ?>
+
 <?php
-    echo "逃げた！"
+    foreach($players as $player){
+        echo "{$player} ";
+    }
+    echo "達は逃げた！"
 
 ?>
